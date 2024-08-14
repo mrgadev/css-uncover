@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Selector CSS</title>
+    <style>
+        /* Sesuai namanya, universal selector akan menselect dan menimpa styling semua elemen html */
+        * {
+            font-family: 'Segoe UI';
+            color: #223b75;
+        }
+
+        /* Lalu, jika ada styling serupa setelahnya, maka tidak akan dijalankan */
+        div {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tips Belajar Bahasa Jerman</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nisi. Tempore temporibus laboriosam accusamus incidunt necessitatibus aliquam sed placeat, laudantium, enim perspiciatis dolore asperiores! Molestiae, nesciunt? Possimus, pariatur? Explicabo voluptas porro rerum perspiciatis beatae! Aliquid quis itaque maiores facere quia, explicabo consequuntur consectetur quae quam ab quibusdam voluptate molestiae maxime?</p>
+
+    <div>
+        <h1>Tips Belajar Bahasa Jerman</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nisi. Tempore temporibus laboriosam accusamus incidunt necessitatibus aliquam sed placeat, laudantium, enim perspiciatis dolore asperiores! Molestiae, nesciunt? Possimus, pariatur? Explicabo voluptas porro rerum perspiciatis beatae! Aliquid quis itaque maiores facere quia, explicabo consequuntur consectetur quae quam ab quibusdam voluptate molestiae maxime?</p>
+    </div>
+</body>
+</html>

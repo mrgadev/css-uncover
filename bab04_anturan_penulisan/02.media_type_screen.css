@@ -1,0 +1,12 @@
+* {
+    font-family: 'Segoe UI';
+}
+
+h1 {
+    color: #223b75;
+    text-decoration: underline;
+}
+
+p {
+    color: green;
+}
