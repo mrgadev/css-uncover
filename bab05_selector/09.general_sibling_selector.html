@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General sibling</title>
+    <!-- Selector kali ini akan memilih semua tag html yg terletak setelah tag html yg lain -->
+     <!-- tidak peduli dia merupakan first child atau bukan -->
+    <style>
+        p + blockquote {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>General Sibling Selector</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, esse.</p>
+
+    <div>
+        <p>Teks 1</p>
+        <blockquote>Kutipan 1</blockquote>
+    </div>
+    <div>
+        <p>Teks 2</p>
+        <blockquote>LKutipan 2</blockquote>
+    </div>
+    <div>
+        <p>Teks 3</p>
+        <blockquote>Kutipan 3</blockquote>
+    </div>
+    <p>Teks di luar div</p>
+    <blockquote>Kutipan di luar div</blockquote>
+</body>
+</html>

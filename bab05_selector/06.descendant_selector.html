@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Descendant selector akan memilih seluruh tag yang menjadi induk atas tag lain -->
+    <!-- Tak peduli seberapa dalaamnya -->
+    <style>
+        div p {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant Selector</h1>
+    <div>
+        <p>Tag p di dalam div 1</p>
+        <p>Tag p di dalam div 2</p>
+        <article>
+            <p>Tag p di dalam article dan div 1</p>
+            <p>Tag p di dalam article dan div 2</p>
+        </article>
+        <p>Tag p di dalam div 3</p>
+    </div>
+</body>
+</html>

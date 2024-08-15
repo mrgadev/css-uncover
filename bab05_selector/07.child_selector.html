@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child selector</title>
+    <!-- Adapun child selector hanya akan memilih tag yg merupakan anak pertama dari sebuah tag lain -->
+    <style>
+        div > p {
+            /* Jadi selector ini hanya akakn memilih tag p yg merupakan generasi pertama dari tag div,
+            Sehingga tag p yg ada di dalam article (gen 2/cucu) akan diabaikan  */
+            color: orange;
+        }   
+
+        /* Kalau selector yg ini akan merubah teks menjadi ungu untuk tag li yg merupakan first child 
+        dari tag ol dan tag ol itu sendiri harus berada dalam tag ul*/
+        ul  ol > li {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Selector</h1>
+    <div>
+        <p>Tag p di dalam tag div 1</p>
+        <p>Tag p di dalam tag div 2</p>
+        <article>
+            <p>Tag p di dalam tag div dan article 1</p>
+            <p>Tag p di dalam tag div dan article 2</p>
+        </article>
+        <p>Tag p di dalam tag div 3</p>
+    </div>
+
+    <h2>Contoh Lain</h2>
+    <ul>
+        <li>
+            List 1
+            <ol>
+                <li>Sub list 1</li>
+                <li>Sub list 2</li>
+                <li>Sub list 3</li>
+            </ol>
+        </li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+</body>
+</html>

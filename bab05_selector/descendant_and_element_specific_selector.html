@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Selector dibawah ni akan memilih elemen div yang memiliki classpesan dan warnanya dirubah ke ungu */
+        div.pesan {
+            color: purple;
+        }
+
+        /*Adapun selector dibawah ini akan memilih tag apapun yang memiliki class pesan dan dia merupakan child dari tag div (descendant)  */
+        div .pesan {
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lagi Belajar CSS</h1>
+    <div class="pesan">Tag div yang beratribut class pesan</div>
+    <div>
+        <p class="pesan">Tag apapun yang memiliki class pesan dan berada di dalam tag div</p>
+    </div>
+</body>
+</html>

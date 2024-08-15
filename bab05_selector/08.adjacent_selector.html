@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent selector</title>
+    <style>
+        /* Adjacent selector akan memilih tag html berdasarkan hubungan sibling relationship */
+        /* Contohnya dalam kasus ini, CSS akan memilih merubah waran teks blockquote hadi merah, */
+        /* Karena ia terletak setelah tag p */
+        p+blockquote {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adjacent Selector</h1>
+    <div>
+        <p>Sebuah teks</p>
+        <blockquote>Sebuah kutipan</blockquote>
+        <h3>Sebuah judul</h3>
+    </div>
+</body>
+</html>
